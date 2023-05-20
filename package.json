@@ -1,0 +1,35 @@
+{
+  "name": "learning-project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "plugins": [
+    "macros"
+  ],
+  "dependencies": {
+    "@fontsource/roboto": "^4.5.8",
+    "@next/font": "^13.4.2",
+    "@sanity/client": "^6.1.1",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/ui": "^1.3.3",
+    "@sanity/vision": "^3.11.1",
+    "autoprefixer": "10.4.14",
+    "framer-motion": "^10.12.10",
+    "mailjs": "^0.1.18",
+    "next": "^13.4.2",
+    "next-sanity": "^4.3.2",
+    "postcss": "^8.4.23",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "react-vertical-timeline-component": "^3.6.0",
+    "sanity": "^3.11.1",
+    "styled-components": "^5.3.10",
+    "tailwindcss": "^3.3.2"
+  }
+}
