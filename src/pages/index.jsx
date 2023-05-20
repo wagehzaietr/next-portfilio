@@ -112,7 +112,7 @@ const HomePage = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 1.8 }}
-              className="flex px-2 mt-[5rem] md:mt-[3rem] items-center"
+              className="flex px-2 mt-[3.2rem] md:mt-[3rem] items-center"
             >
               <span className="pr-5 text-text2 text-[16px] tracking-[1px] capitalize font-bold">
                 built with:
