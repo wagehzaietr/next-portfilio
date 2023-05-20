@@ -1,12 +1,38 @@
 import Contact1 from '../../public/assets/images/instagram.png';
 import Contact2 from '../../public/assets/images/linkedin.png';
 import Contact3 from '../../public/assets/images/github.png';
-import { GiConsoleController } from 'react-icons/gi';
-import {
-  BsEmojiSunglasses,
-  BsEmojiHeartEyesFill,
-  BsEmojiWinkFill,
-} from 'react-icons/bs';
+import { AiFillPhone } from 'react-icons/ai';
+import { RiMapPin2Fill } from 'react-icons/ri';
+import { FaUser } from 'react-icons/fa';
+import { IoMdMail } from 'react-icons/io';
+
+const ContactInfo = [
+  {
+    id: 1,
+    name: 'name',
+    icon: <FaUser size={15} />,
+    info: 'Wageh zaietr',
+  },
+  {
+    id: 1,
+    name: 'email',
+    icon: <IoMdMail size={15} />,
+    info: 'bad1game1@hotmail.com',
+  },
+  {
+    id: 1,
+    name: 'phone',
+    icon: <AiFillPhone size={15} />,
+    info: '+963 960902967',
+  },
+  {
+    id: 1,
+    name: 'address',
+    icon: <RiMapPin2Fill size={15} />,
+    info: 'Damascus syria',
+  },
+];
+
 
 const technobuild = [
   {
@@ -129,4 +155,4 @@ const Aboutme = [
 //   },
 // ];
 
-export { ItemsList, Btn, Skillsletters, ProjectsLetters, Aboutme, technobuild };
+export { ItemsList, Btn, Skillsletters, ProjectsLetters, Aboutme, technobuild, ContactInfo };

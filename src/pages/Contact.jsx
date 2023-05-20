@@ -1,37 +1,8 @@
 import Layout from 'src/pages/Layout ';
 import React from 'react';
-import { AiFillPhone } from 'react-icons/ai';
-import { RiMapPin2Fill } from 'react-icons/ri';
-import { FaUser } from 'react-icons/fa';
-import { IoMdMail } from 'react-icons/io';
 import { motion } from 'framer-motion';
+import { ContactInfo } from 'src/Helpers/Data';
 
-const ContactInfo = [
-  {
-    id: 1,
-    name: 'name',
-    icon: <FaUser size={15} />,
-    info: 'Wageh zaietr',
-  },
-  {
-    id: 1,
-    name: 'email',
-    icon: <IoMdMail size={15} />,
-    info: 'bad1game1@hotmail.com',
-  },
-  {
-    id: 1,
-    name: 'phone',
-    icon: <AiFillPhone size={15} />,
-    info: '+963 960902967',
-  },
-  {
-    id: 1,
-    name: 'address',
-    icon: <RiMapPin2Fill size={15} />,
-    info: 'Damascus syria',
-  },
-];
 
 const Contact = () => {
   return (

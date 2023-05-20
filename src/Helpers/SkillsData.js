@@ -10,6 +10,7 @@ import skill9 from "../../public/assets/images/photoshop.png";
 import skill10 from "../../public/assets/images/tailwind1.png";
 import skill11 from "../../public/assets/images/styled-comp.png";
 import skill12 from "../../public/assets/images/firebase.png";
+import skill13 from "../../public/assets/images/sanity.svg";
 
 const skillsData = [
   {
@@ -71,6 +72,11 @@ const skillsData = [
     id: 11,
     image: skill11,
     title: "styled-components",
+  },
+  {
+    id: 12,
+    image: skill13,
+    title: "sanity.io",
   },
 ];
 

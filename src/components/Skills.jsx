@@ -34,27 +34,28 @@ const Skills = () => {
           );
         })}
       </div>
-      <div className=" container pt-[3.5rem] overflow-hidden pb-[2rem] m-auto grid grid-cols-1 md:grid-cols-6 gap-[2rem] ">
+      <div className=" container pt-[1rem] md:pt-[3.5rem] overflow-hidden pb-[2rem] m-auto grid grid-cols-1 md:grid-cols-6 gap-[2rem] ">
         {skillsData.map((skill, index) => {
           return (
             <motion.div
               initial={{ opacity: 0, y: -10 }}
               whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               whileHover={{ scale: 1.1 }}
               transition={{
                 duration: 0.1 * index,
-                delay: 0.4 * index,
+                delay: 0.2 * index,
                 bounce: 15 + index,
                 type: "spring",
                 stiffness: 120,
-              }}
+              }}  
               className="flex items-center justify-center flex-col"
               key={skill.id}
             >
               <Image
                 src={skill.image}
                 alt={skill.title}
-                className="mt-[3rem] object-contain h-[100px] w-[100px] rounded-full bg-gradient-to-br from-gray-300 via-white to-gray-100 p-5 shadow-md shadow-cartoon text-center"
+                className="mt-[3rem] object-contain h-[90px] w-[90px] md:h-[100px] md:w-[100px] rounded-full bg-gradient-to-br from-gray-300 via-white to-gray-100 p-4 md:p-5 shadow-md shadow-cartoon text-center"
                 width={100}
                 height={100}
                 key={skill.id}
