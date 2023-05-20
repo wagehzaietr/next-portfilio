@@ -3,7 +3,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ContactInfo } from 'src/Helpers/Data';
 
-
 const Contact = () => {
   return (
     <Layout>
@@ -15,7 +14,7 @@ const Contact = () => {
         >
           <div className=" bg-text z-10 shadow-cartoon p-[2rem] md:w-[25%] md:h-[85%] w-[100%] h-[85%] rounded-md ">
             <h1 className="capitalize text-3xl text-white">contact info</h1>
-            <div className="mt-[3.2rem] flex items-center gap-2">
+            <div className="mt-[1.2rem] md:mt-[3.2rem] flex items-center gap-2">
               <div>
                 {ContactInfo.map((ContactData, index) => {
                   const { icon, name, info } = ContactData;
@@ -39,7 +38,7 @@ const Contact = () => {
               </h1>
               <form
                 className="mt-[2rem]"
-                action="https://formsubmit.co/bad1game1@hotmail.com"
+                action="https://formsubmit.co/218df6ef4bb0e5ba0ea0a72847229609"
                 method="POST"
               >
                 <label htmlFor="name" className="text-text2">
