@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 
 const TimeLine = () => {
   return (
-    <div className="flex-col overflow-hidden mt-[30rem] md:mt-[0] pb-[4rem] md:pb-[8rem]  h-full container mx-auto flex justify-center items-center px-5">
+    <div className="flex-col overflow-hidden mt-[36rem] md:mt-[0] pb-[4rem] md:pb-[8rem]  h-full container mx-auto flex justify-center items-center px-5">
       <div className="flex md:my-[8rem] justify-center bg-gradient-to-r md:h-[90px] md:w-[230px] md:text-[3rem] text-[2rem] h-[70px] w-[160px] my-[3.1rem] rounded-[6px] shadow-md shadow-cartoon font-[500] border-[2px] border-cartoon   m-auto text-text2 captop:text-[5rem] tracking-wide p-2 text-center">
         {Aboutme.map((letter, index) => {
           return (
