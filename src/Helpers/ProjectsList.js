@@ -5,6 +5,7 @@ import proj5 from '../../public/assets/images/proj5.png';
 import proj6 from '../../public/assets/images/proj6.png';
 import proj8 from '../../public/assets/images/proj8.png';
 import proj9 from '../../public/assets/images/proj9.png';
+import proj10 from '../../public/assets/images/proj10.png';
 
 const ProjectsList = [
   {
@@ -36,6 +37,21 @@ const ProjectsList = [
     ],
   },
   {
+    id: 4,
+    name: 'Mario Kart8 inspired website',
+    description:
+      'Experience the Mario Kart8 Inspired Website: a captivating project using Next.js, Tailwind CSS, and Framer Motion. Designed for desktop, it offers an optimized mobile experience. Navigate the world of races, characters, and power-ups with seamless navigation and enchanting animations. Rev up the excitement on any screen.',
+    image: proj10,
+    link: 'https://mario-kart8-website.vercel.app',
+    technologies: [
+      '/assets/images/react.png',
+      '/assets/images/next.png',
+      '/assets/images/tailwind1.png',
+      '/assets/images/framer.svg',
+      '/assets/images/javascript.png',
+    ],
+  },
+  {
     id: 3,
     name: 'Photo Gallery Website',
     description:
@@ -51,7 +67,7 @@ const ProjectsList = [
     ],
   },
   {
-    id: 4,
+    id: 10,
     name: 'Crypto Currency Website',
     description:
       ' Crypto Currency Website is a simple yet functional project that retrieves data from an API and displays the latest crypto currency prices. This website was created using React and CSS styling and was made during the learning phase of API and React development.',
