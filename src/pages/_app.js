@@ -1,7 +1,7 @@
 import '../styles/globals.css';
 import { Fredoka } from '@next/font/google';
-import { motion } from 'framer-motion';
-// import { ProjectProvider } from 'src/context/SanityContext';
+import { useState, useEffect } from 'react';
+import ReactLoading from 'react-loading';
 
 const fredoka = Fredoka({
   subsets: ['latin'],
@@ -9,11 +9,35 @@ const fredoka = Fredoka({
 });
 
 export default function App({ Component, pageProps }) {
-  //loading
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
-    <motion.div className={fredoka.className}>
-      <Component {...pageProps} />
-    </motion.div>
+    <div className={fredoka.className}>
+      {loading ? (
+        <div
+          style={{
+            width: '100vw',
+            height: '100vh',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          <ReactLoading type="spin" color="#000" height={100} width={100} />
+        </div>
+      ) : (
+        <div>
+          <Component {...pageProps} />
+        </div>
+      )}
+    </div>
   );
 }
