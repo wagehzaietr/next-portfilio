@@ -190,7 +190,6 @@ const HomePage = () => {
           className="flex justify-center items-center pr-5"
         >
           <div className="w-[360px] shadow-lg shadow-cartoon relative h-[350px] rounded-[10px] md:w-[510px] md:h-[580px] mt-[15%] flex items-center justify-center md:justify-end bg-gradient-to-br md:ml-[5rem] ml-[.1rem] from-gray-300 via-white to-gray-100  p-5">
-            <span className="w-[360px]  h-[350px]  md:w-[510px] md:h-[580px]   border-2 border-text z-[-99] shadow-lg  absolute top-[-.5rem] left-[.5rem] md:top-[-1rem] md:left-[1rem]"></span>
             <Image
               src={rightimg}
               className="object-cover rounded-lg"
